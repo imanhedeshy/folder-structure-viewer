@@ -1,48 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 .file-structure-viewer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
   padding: 20px;
-  box-sizing: border-box;
-  overflow: auto;
-}
-.file-structure-viewer__button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007BFF;
-  color: white;
-  cursor: pointer;
-}
-.file-structure-viewer__button:hover {
-  background-color: #0056b3;
 }
 .file-structure-viewer__input {
-  display: none;
+  width: 70%;
+  margin: 10px;
+  padding: 10px;
 }
-.file-structure-viewer__table {
+.file-structure-viewer__button, .file-structure-viewer__button-excel {
+  cursor: pointer;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+.file-structure-viewer__button:hover, .file-structure-viewer__button-excel:hover {
+  background-color: white;
+  color: black;
+}
+.file-structure-viewer__structure {
+  width: 70%;
   margin-top: 20px;
-  border-collapse: collapse;
-  width: 80%;
-  max-width: 500px;
 }
-.file-structure-viewer__table th, .file-structure-viewer__table td {
+.file-structure-viewer__structure .folder, .file-structure-viewer__structure .file {
+  padding-left: 30px;
+  position: relative;
+}
+.file-structure-viewer__structure .folder::before, .file-structure-viewer__structure .file::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.file-structure-viewer__structure .folder::before {
+  background-image: url("folder-icon.svg");
+}
+.file-structure-viewer__structure .file::before {
+  background-image: url("file-icon.svg");
+}
+.file-structure-viewer__spreadsheet {
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th, .table td {
   border: 1px solid #ddd;
   padding: 8px;
+}
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: left;
-}
-.file-structure-viewer__table th {
-  background-color: #f2f2f2;
-}
-.file-structure-viewer__table th .collapse-button {
-  float: right;
-  border: none;
-  background-color: #007BFF;
+  background-color: #04AA6D;
   color: white;
-  cursor: pointer;
-}
-.file-structure-viewer__table th .collapse-button:hover {
-  background-color: #0056b3;
 }/*# sourceMappingURL=style.css.map */
