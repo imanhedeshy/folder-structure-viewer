@@ -1,0 +1,48 @@
+.file-structure-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.file-structure-viewer__button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+.file-structure-viewer__button:hover {
+  background-color: #0056b3;
+}
+.file-structure-viewer__input {
+  display: none;
+}
+.file-structure-viewer__table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 500px;
+}
+.file-structure-viewer__table th, .file-structure-viewer__table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.file-structure-viewer__table th {
+  background-color: #f2f2f2;
+}
+.file-structure-viewer__table th .collapse-button {
+  float: right;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+.file-structure-viewer__table th .collapse-button:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=style.css.map */

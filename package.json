@@ -1,0 +1,15 @@
+{
+  "name": "folder-structure-viewer",
+  "version": "1.0.0",
+  "description": "FolderStructureViewer is a web application that enables users to browse, select, and view the file structure of local directories.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,32 @@
+.file-structure-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.file-structure-viewer__button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.file-structure-viewer__button:hover {
+  background-color: #0056b3;
+}
+.file-structure-viewer__input {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.file-structure-viewer__table {
+  width: 100%;
+}

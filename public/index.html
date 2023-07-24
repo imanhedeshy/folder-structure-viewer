@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Structure Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="file-structure-viewer">
+    <button class="file-structure-viewer__button">Browse Folder</button>
+    <input type="text" class="file-structure-viewer__input" placeholder="Enter folder path" />
+    <input type="file" id="myFile" multiple size="50">
+    <div id="demo"></div>
+    <table class="file-structure-viewer__table">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Type</th>
+          <th>Name <button class="collapse-button">Collapse</button></th>
+        </tr>
+      </thead>
+      <tbody class="file-structure-viewer__tbody">
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
