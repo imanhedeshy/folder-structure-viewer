@@ -5,7 +5,7 @@ const structureContainer = document.querySelector('.file-structure-viewer__struc
 const spreadsheetContainer = document.querySelector('.file-structure-viewer__spreadsheet');
 
 browseButton.addEventListener('click', () => {
-    fetch(`http://localhost:3000/folder-structure?path=${encodeURIComponent(folderInput.value)}`)
+    fetch(`https://imanhedeshy.github.io/folder-structure?path=${encodeURIComponent(folderInput.value)}`)
         .then(response => response.json())
         .then(data => {
             structureContainer.innerHTML = '';
@@ -16,7 +16,7 @@ browseButton.addEventListener('click', () => {
 });
 
 downloadExcelButton.addEventListener('click', () => {
-    fetch(`http://localhost:3000/folder-structure-excel?path=${encodeURIComponent(folderInput.value)}`)
+    fetch(`https://imanhedeshy.github.io/folder-structure-excel?path=${encodeURIComponent(folderInput.value)}`)
         .then(response => response.arrayBuffer())
         .then(data => {
             const workbook = XLSX.read(data, {type: 'buffer'});
